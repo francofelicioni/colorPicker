@@ -1,0 +1,23 @@
+.App {
+  /* height: 100vh; */
+  height: 100%;
+  width: 100vw;
+  background: #2C2C2C;
+}
+.selector{
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .App {
+    height: 100vh;
+    width: 100vw;
+    background: #2C2C2C;
+  }
+
+  .selector {
+    margin-top: 10px;
+    
+  }
+} 
