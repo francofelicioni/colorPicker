@@ -24,13 +24,6 @@ function App() {
           setSavedscheme={setSavedscheme}
         />
       </div>
-      {/* <div className="saved" >
-        <SavedPallete
-          savedscheme={savedscheme}
-          setSavedscheme={setSavedscheme}
-        />
-      </div> */}
-
     </div>
   );
 }

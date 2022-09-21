@@ -14,8 +14,10 @@
 
 @media screen and (max-width: 768px) {
     .Header {
-        padding: 5px;
+        padding: 5px 40px;
         padding-bottom: 40px;
+        align-items: center;
+        /* justify-content: space-around; */
     }
 
     .Header-icon {
