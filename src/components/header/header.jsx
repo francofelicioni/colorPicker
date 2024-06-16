@@ -1,11 +1,10 @@
-import './header.css';
 
 
-function Header() {
+const  Header = () => {
   return (
-    <div className="Header">
+    <div className="">
         <img src="icons/paleta.svg" alt="paleta" className='Header-icon' />
-        <h1 className='Header-title'>Color palette generator</h1>
+        <h1 className='text-white'>Color palette generator</h1>
     </div>
   );
 }
