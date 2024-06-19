@@ -3,8 +3,12 @@ import { CompactPicker } from 'react-color'
 
 const Picker = ({colorSelected, setColorSelected}) => {
 
+    const handleColorChange = (newColor) => {
+        setColorSelected(newColor.hex)
+    }
+
     return (
-        <CompactPicker color={colorSelected} onChangeComplete={(hex)=> setColorSelected(hex)} />
+        <CompactPicker color={colorSelected} onChangeComplete={(hex)=> handleColorChange(hex)} />
     )
 }
 
