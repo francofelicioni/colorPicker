@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 
-const CircleColor = ({colorSelected}) => {
+const CircleColor = ({ index, color, colorSelected, colors, setColors }) => {
 
-  const circleColorClass = colorSelected !== '' ? `rounded-full border border-3 border-white w-20 h-20 bg-[${colorSelected}]` : '';
+  const circleColorClassName = `rounded-full border-3 border-white w-20 h-20 bg-[${color}] `;
 
   const handleClick = () => {
-    console.log(colorSelected)
+    const newColors = [...colors];
+    newColors[index] = colorSelected;
+    setColors(newColors);
   }
 
   return (
-    <div className={circleColorClass} onClick={handleClick}>
-      {colorSelected === '' && <img src="icons/default.svg" alt="No color" />}
+    <div className={circleColorClassName} onClick={handleClick}>
+      {color === '' && <img src="icons/default.svg" alt="No color" />}
     </div>
   );
 };
