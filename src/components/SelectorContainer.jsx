@@ -1,26 +1,23 @@
-import React, { useState } from 'react'
-import CircleColor from './CircleColor'
+import React from 'react';
+import CircleColor from './CircleColor';
 
-const SelectorContainer = ({ colorSelected }) => {
-  const [colors, setColors] = useState(Array(5).fill(''))
-
-  const handleColorChange = (index, newColor) => {
-    const updatedColors = [...colors]
-    updatedColors[index] = newColor
-    setColors(updatedColors)
-  }
+const SelectorContainer = ({ colorSelected, colors, setColors }) => {
 
   return (
-    <div className='flex justify-center items-center gap-x-8 py-4'>
-      {colors.map((color, index) => (
+    <div className="flex justify-center items-center gap-x-8 py-4">
+      {Array.from(colors).map((color, index) => (
         <CircleColor
-          colorSelected={color}
           key={index}
-          onColorChange={(newColor) => handleColorChange(index, newColor)}
+          index={index}
+          color={color}
+          colorSelected={colorSelected}
+          colors={colors}
+          setColors={setColors}
         />
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default SelectorContainer
+export default SelectorContainer;
+
