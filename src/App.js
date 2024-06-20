@@ -1,8 +1,8 @@
 import './App.css';
-import SelectorContainer from './components/SelectorContainer';
-import Header from './components/header';
-import Picker from './components/Picker';
 import { useState } from 'react';
+import Header from './components/Header';
+import SelectorContainer from './components/SelectorContainer';
+import Picker from './components/Picker';
 
 function App() {
 
