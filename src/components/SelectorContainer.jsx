@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import CircleColor from './CircleColor';
 
 const SelectorContainer = ({ colorSelected, colors, setColors }) => {
 
+  const [activeIndex, setActiveIndex] = useState(null);
+
+
   return (
-    <div className="flex justify-center items-center gap-x-8 py-4">
+    <div className="flex justify-center items-center gap-x-6 py-6">
       {Array.from(colors).map((color, index) => (
         <CircleColor
           key={index}
@@ -13,6 +16,8 @@ const SelectorContainer = ({ colorSelected, colors, setColors }) => {
           colorSelected={colorSelected}
           colors={colors}
           setColors={setColors}
+          setActiveIndex={setActiveIndex}
+          isSelected={activeIndex === index}
         />
       ))}
     </div>
