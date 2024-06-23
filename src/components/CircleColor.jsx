@@ -13,9 +13,6 @@ const CircleColor = ({ index, color, colorSelected, colors, setColors, setActive
     if (colorSelected === '') {
       newColors[index] = '#000000';
       setColors(newColors);
-    } else {
-      newColors[index] = colorSelected;
-      setColors(newColors);
     }
   }
 
