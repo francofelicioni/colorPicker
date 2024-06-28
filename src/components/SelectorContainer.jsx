@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CircleColor from './CircleColor';
 
-const SelectorContainer = ({ colorSelected, colors, setColors }) => {
-
-  const [activeIndex, setActiveIndex] = useState(null);
-
+const SelectorContainer = ({ colorSelected, colors, setColors, activeIndex, setActiveIndex }) => {
 
   return (
     <div className="flex justify-center items-center gap-x-6 py-6">
