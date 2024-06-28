@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
-const NameInput = ({colors, setColors, setActiveIndex}) => {
+const NameInput = ({colors, setColors, setActiveIndex, savedSchemas, setSavedSchemas}) => {
 
   const [name, setName] = useState('')
 
@@ -15,7 +15,10 @@ const NameInput = ({colors, setColors, setActiveIndex}) => {
       return
     }
 
-    localStorage.setItem('savedSchema', JSON.stringify(colors));
+    let savedSchemas = JSON.parse(localStorage.getItem('savedSchemas')) || [];
+    savedSchemas.push([name, colors]);
+    setSavedSchemas(savedSchemas)
+    localStorage.setItem('savedSchemas', JSON.stringify(savedSchemas));
     setColors(Array(5).fill(''))
     setActiveIndex(null)
     setName('')
