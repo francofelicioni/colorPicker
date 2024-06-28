@@ -1,0 +1,39 @@
+<svg width="80" height="80" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_19_112)">
+        <circle cx="38.6665" cy="39" r="35.1667" fill="url(#paint0_linear_19_112)" stroke="white"
+            stroke-width="3" />
+        <line x1="37.7332" y1="18.4667" x2="37.7332" y2="58.0667" stroke="white" stroke-width="4" />
+        <path d="M59.1998 39.0001L19.5998 39.0001" stroke="white" stroke-width="4" />
+    </g>
+    <defs>
+        <filter id="filter0_d_19_112" x="-0.00012207" y="0.333313" width="77.3334" height="77.3333"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+            <feOffset />
+            <feGaussianBlur stdDeviation="1" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_19_112" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_19_112" result="shape" />
+        </filter>
+        <linearGradient id="paint0_linear_19_112" x1="18.8665" y1="10.4" x2="64.3332" y2="49.2666"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#404040" />
+            <stop offset="0.177083" stop-color="#404040" />
+            <stop offset="0.177183" stop-color="#B0B0B0" />
+            <stop offset="0.333333" stop-color="#B0B0B0" />
+            <stop offset="0.333433" stop-color="#404040" />
+            <stop offset="0.484375" stop-color="#404040" />
+            <stop offset="0.484475" stop-color="#B0B0B0" />
+            <stop offset="0.635417" stop-color="#B0B0B0" />
+            <stop offset="0.635517" stop-color="#404040" />
+            <stop offset="0.791667" stop-color="#404040" />
+            <stop offset="0.791767" stop-color="#B0B0B0" />
+            <stop offset="0.9375" stop-color="#B0B0B0" />
+            <stop offset="0.9376" stop-color="#404040" />
+        </linearGradient>
+    </defs>
+</svg>
+    
